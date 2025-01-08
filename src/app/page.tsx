@@ -9,6 +9,9 @@ import ReactPlayer from "react-player";
 import FAQ from "@/components/main/faq";
 import Roadmap from "@/components/main/roadmap";
 import Team from "@/components/main/team";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
+import * as THREE from 'three';
 import PlayList from "@/components/main/playlist";
 
 
@@ -21,6 +24,18 @@ export default function Home() {
     setMovie ({ title, url });
     setShowPlayer (true);
   }
+  const Model = () => {
+    const { scene, animations } = useGLTF('/idle.glb');
+    const { actions } = useAnimations(animations, scene);
+    console.log(actions);
+    React.useEffect(() => {
+      if(actions) {
+        actions.idle?.setLoop(THREE.LoopRepeat, Infinity);
+        actions.idle?.play();
+      }
+    }, [actions]);
+    return <primitive object={scene} scale={2} position={[0, -2, 0]}/>;
+  };
 
   React.useEffect(() => {
     AOS.init();
@@ -29,6 +44,16 @@ export default function Home() {
   return (
     <main className="dark:bg-[#0d0a1cfa] bg-[#a35ed4d2]">
       <div className="bg-[url('/back.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
+        <div className="w-full md:w-1/2 h-full z-20">
+          <Canvas>
+            <ambientLight intensity={3} />
+            <pointLight position={[10, 10, 10]} intensity={1} />
+            <directionalLight position={[-5, 5, 5]} intensity={0.5} />
+            <spotLight position={[15, 20, 5]} angle={0.3} intensity={0.8} />
+            <Model />
+            {/* <OrbitControls /> */}
+          </Canvas>
+        </div>
         <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 pr-20">
           <h1 className="mb-5 md:text-4xl lg:text-6xl font-zing font-bold">
             MEET Astro
