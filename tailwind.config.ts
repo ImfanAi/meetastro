@@ -19,6 +19,7 @@ const config: Config = {
         snow: ["var(--font-snow)"],
         qarmic: ["var(--font-qarmic)"],
         lapsus: ["var(--font-lapsus)"],
+        zing: ["var(--font-zing)"],
       },
       screens: {
         'xl': '1440px',

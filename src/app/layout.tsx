@@ -60,17 +60,24 @@ const qarmicFont = localFont({
   ],
   variable: "--font-qarmic",
 });
-
+const zingFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/zing.rust-demo-base.otf",
+    },
+  ],
+  variable: "--font-zing",
+});
 
 export const metadata: Metadata = {
   title: "Meet Astro",
-  description: "solana meme coin",
+  description: "defai agent",
   icons: {
     icon: [
       {
-        media: "(prefers-color-scheme: light)",
-        url: "/favicon.png",
-        href: "/favicon.png",
+        media: "(prefers-color-scheme: dark)",
+        url: "/tokenomics.png",
+        href: "/tokenomics.png",
       }
     ],
   },
@@ -82,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true} className={`${catFont.variable} ${dalekFont.variable} ${rushdaFont.variable} ${snowFont.variable} ${qarmicFont.variable} ${lapsusFont.variable}`}>
+    <html lang="en" suppressHydrationWarning={true} className={`${catFont.variable} ${dalekFont.variable} ${rushdaFont.variable} ${snowFont.variable} ${qarmicFont.variable} ${lapsusFont.variable} ${zingFont.variable}`}>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Provider>
           <Header />

@@ -76,25 +76,14 @@ const Roadmap = () => {
             <div className={`flex items-center px-8 justify-center relative flex-none md:py-10`}>
                 <div className="bg-white h-full w-[1px] translate-x-1/2 z-0"></div>
                 <div className="absolute w-[60px] h-[60px] flex-none z-10 rounded-full p-1 dark:bg-transparent bg-transparent">
-                    {
-                        index % 2 !== 0 ?
-                        <Image
-                            src='/victory.png'
-                            alt='asdf'
-                            sizes='100vw'
-                            height={50}
-                            width={50}
-                            className='rounded-full'
-                        />:
-                        <Image
-                            src='/victory.png'
-                            alt='asdf'
-                            sizes='100vw'
-                            height={50}
-                            width={50}
-                            className='rounded-full'
-                        />
-                    }
+                    <Image
+                        src={`/roadmap-${index}.png`}
+                        alt='asdf'
+                        sizes='100vw'
+                        height={50}
+                        width={50}
+                        className='rounded-full'
+                    />
                 </div>
             </div>
             <div className='w1300:w-[35%] lg:w-[45%] md:w-1/2 w-full md:block hidden'></div>

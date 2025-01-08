@@ -30,16 +30,16 @@ export default function Home() {
     <main className="dark:bg-[#0d0a1cfa] bg-[#a35ed4d2]">
       <div className="bg-[url('/back.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
         <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 pr-20">
-          <h1 className="mb-5 md:text-4xl lg:text-6xl font-lapsus font-bold">
+          <h1 className="mb-5 md:text-4xl lg:text-6xl font-zing font-bold">
             MEET Astro
           </h1>
-          <p className="text-justify font-lapsus">
+          <p className="text-justify font-zing">
             At Astro, we&apos;re not just another AI agent – we&apos;re the forefront of DeFAi Harnessing the whimsical power of AI, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Astro revolution today – Astro wants to send people to new Era of DeFAi, we want to send Astro to the moon.
           </p>
         </div>
       </div>
       <div className="mt-10 md:hidden dark:text-white text-2xl leading-10 lg:text-3xl xl:text-4xl lg:leading-10 px-3">
-        <h1 className="mb-5 text-center text-3xl md:text-4xl lg:text-6xl font-lapsus font-extrabold">
+        <h1 className="mb-5 text-center text-3xl md:text-4xl lg:text-6xl font-zing font-extrabold">
           MEET Astro
         </h1>
         <p
@@ -72,15 +72,15 @@ export default function Home() {
           Connect with fellow DeFAi farmers and cultivate collective growth in a harmonious ecosystem.
         </h3>
         <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
-          <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+          <a href="https://x.com/MeetAstroAI" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
             <span className="hidden md:inline">Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
           </a>
-          <a href="https://t.me/richysoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+          <a href="https://t.me/+oh9HXznG6eg5ZTI1" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
             <span className="hidden md:inline">Telegram</span>
             <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl" />
           </a>
-          <a href="https://www.tiktok.com/@richysoonakcoin" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+          <a href="https://www.tiktok.com/@meetastroai" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
             <span className="hidden md:inline">Tiktok&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <Icon icon="simple-icons:tiktok" className="text-xl sm:text-4xl" />
           </a>
@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       }
       
-      <PlayList onPlay={showMovie}/>
+      {/* <PlayList onPlay={showMovie}/> */}
 
       <div className="">
         <FAQ />

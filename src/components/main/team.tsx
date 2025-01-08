@@ -60,7 +60,7 @@ const Roadmap = () => {
         <div key={_user.name} className={`${ index % 2 === 0 && ' md:flex-row-reverse' } flex-col-reverse md:flex-row flex items-center justify-end md:gap-2 lg:gap-5`}>
             <div className="flex flex-col gap-2 justify-center items-center">
                 <h2 className="nd:text-xl lg:text-3xl text-center">{_user.name}</h2>
-                <h2 className="md:text-[16px] lg:text-xl font-lapsus opacity-50 text-center">{_user.role}</h2>
+                <h2 className="md:text-[16px] lg:text-xl font-zing opacity-50 text-center">{_user.role}</h2>
                 <div className="flex gap-2">
                     { _user.twitter && <a href={_user.twitter} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="uil:twitter" className="text-2xl"/></a>}
                     { _user.instagram && <a href={_user.instagram} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="ri:instagram-line" className="text-2xl"/></a> }

@@ -9,16 +9,24 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    title: 'WHO IS ASTRO?',
-    description: 'ASTRO is a AI Agent created on and living in the DeFAi Ecosystem!'
+    title: 'What is MeetAstro and how does it work?',
+    description: 'MeetAstro is a gamified platform that integrates AI, decentralized finance (DeFi), and entertainment. Users interact with "Astro," your AI-powered companion that guides you through DeFi tools and experiences in a gamified way.'
   },
   {
-    title: 'WHAT CHAIN IS APED ON?',
-    description: '$ASTRO is on the Solana Chain, a layer 1 blockchain. Learn more about solana chain here https://docs.solana.org/'
+    title: 'What is the purpose of the Swap ATM feature?',
+    description: 'The Swap ATM allows users to swap cryptocurrencies using a decentralized exchange (DEX) mechanism. It facilitates token swaps through a secure wallet and user-friendly interface.'
   },
   {
-    title: 'HOW CAN I BUY $ASTRO?',
-    description: 'Please refer to our how to buy section mentioned above.'
+    title: 'How does the Yield Generator benefit users?',
+    description: 'The Yield Generator helps users find optimal staking opportunities for their crypto assets. It uses AI to analyze blockchain data and connect with staking platforms to maximize returns.'
+  },
+  {
+    title: 'What is the leveling and rewards system?',
+    description: 'Users earn XP and unlock rewards as they interact with the platform. Completing missions and using features like the Swap ATM increases Astro’s level, providing perks such as bigger rewards and special in-game fun.'
+  },
+  {
+    title: 'How does revenue sharing work?',
+    description: 'MeetAstro redistributes platform earnings to active users through participation rewards. A portion of the revenue is pooled and distributed once certain thresholds are met.'
   },
 ]
 
@@ -26,7 +34,7 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="section-faq p-left p-right !font-snow">
-      <div className="container5 align-middle">
+      <div className="container5 align-top">
         <h2
           className="heading text-white text-center md:text-left w-full md:w-auto"
           data-aos="fade-right"

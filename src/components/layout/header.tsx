@@ -11,10 +11,10 @@ const Header = () => {
             <div className='fixed top-0 flex gap-2 py-1 items-center justify-between w-full px-5 dark:bg-[#131b2e] bg-[#d0d0d8] backdrop-filter backdrop-blur-[10px] z-50'>
                 <h1 className='text-sm font-bold dark:text-white truncate'>Astro</h1>
                 <div className='flex gap-2 items-center'>
-                    <a href='https://github.com/Richy-Soonak' target='_blank'><Icon icon="ri:github-fill" className='text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
-                    <a href='https://x.com/RichySoonak' target='_blank'><Icon icon="uim:twitter" className=' text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
-                    <a href='https://t.me/richysoonak' target='_blank'><Icon icon="mingcute:telegram-fill" className=' text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
-                    <a href='https://discord.gg/Vp9mR8gP' target='_blank'><Icon icon="ri:discord-line" className=' text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
+                    <a href='https://www.tiktok.com/@meetastroai' target='_blank'><Icon icon="line-md:tiktok"  className='text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
+                    <a href='https://x.com/MeetAstroAI' target='_blank'><Icon icon="uim:twitter" className=' text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
+                    <a href='https://t.me/+oh9HXznG6eg5ZTI1' target='_blank'><Icon icon="mingcute:telegram-fill" className=' text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
+                    <a href='https://www.instagram.com/MeetAstroAI/' target='_blank'><Icon icon="mdi:instagram" className=' text-xl dark:text-white cursor-pointer hover:opacity-70' /></a>
                     <ThemeSwitcher />
                 </div>
             </div>

@@ -64,8 +64,8 @@ const Tokenomics = () => {
                         <div>
                             <ul id="legendLeft">
                                 <li>
-                                    <span className="text-4xl font-extrabold font-lapsus text-white number">10%</span>
-                                    <span className="text-4xl font-extrabold font-lapsus text-white">Dev Wallet</span>
+                                    <span className="text-4xl font-extrabold font-zing text-white number">10%</span>
+                                    <span className="text-4xl font-extrabold font-zing text-white">Dev Wallet</span>
                                 </li>
                             </ul>
                         </div>
@@ -94,8 +94,8 @@ const Tokenomics = () => {
                         >
                             <ul id="legendRight">
                                 <li>
-                                    <span className="text-4xl font-extrabold font-lapsus text-white text-center number">90%</span>
-                                    <span className="text-4xl font-extrabold font-lapsus text-white text-center">Locked Liquidity</span>
+                                    <span className="text-4xl font-extrabold font-zing text-white text-center number">90%</span>
+                                    <span className="text-4xl font-extrabold font-zing text-white text-center">Locked Liquidity</span>
                                     <span onClick={() => window.open('https://solscan.io/account/EsBiDt8LKDb24ZQpfb7MWj1RCBD7ewKCjt9xEXMyMCyD', '_blank')} className="font-bold text-white text-center mt-5 font-sans text-lg break-all cursor-pointer underline">EsBiDt8LKDb...xEXMyMCyD</span>
                                 </li>
                             </ul>
