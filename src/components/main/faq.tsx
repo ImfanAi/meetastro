@@ -13,21 +13,22 @@ const faqs: FAQ[] = [
     description: 'MeetAstro is a gamified platform that integrates AI, decentralized finance (DeFi), and entertainment. Users interact with "Astro," your AI-powered companion that guides you through DeFi tools and experiences in a gamified way.'
   },
   {
-    title: 'What is the purpose of the Swap ATM feature?',
-    description: 'The Swap ATM allows users to swap cryptocurrencies using a decentralized exchange (DEX) mechanism. It facilitates token swaps through a secure wallet and user-friendly interface.'
-  },
-  {
-    title: 'How does the Yield Generator benefit users?',
-    description: 'The Yield Generator helps users find optimal staking opportunities for their crypto assets. It uses AI to analyze blockchain data and connect with staking platforms to maximize returns.'
-  },
-  {
-    title: 'What is the leveling and rewards system?',
-    description: 'Users earn XP and unlock rewards as they interact with the platform. Completing missions and using features like the Swap ATM increases Astro’s level, providing perks such as bigger rewards and special in-game fun.'
-  },
-  {
     title: 'How does revenue sharing work?',
     description: 'MeetAstro redistributes platform earnings to active users through participation rewards. A portion of the revenue is pooled and distributed once certain thresholds are met.'
   },
+  {
+    title: 'What kind of missions can Astro undertake?',
+    description: 'Astro can embark on missions which earn yield tokens, XP, and other rewards. Players can speed up missions by spending in-game gems.'
+  },
+  {
+    title: 'How do social media and referrals contribute to rewards?',
+    description: 'Users earn in-game currency by interacting with social media posts and referring others. The platform tracks interactions, and referrals yield bonuses based on user activity.'
+  },
+  {
+    title: 'What is the long-term vision for MeetAstro?',
+    description: 'MeetAstro plans to expand mission types, and enhance DeFi integration. Future updates will include more gamified elements, game modes, more defi features to increase user engagement and revenue distribution.'
+  },
+  
 ]
 
 const FAQ = () => {
