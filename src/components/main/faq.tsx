@@ -34,10 +34,10 @@ const faqs: FAQ[] = [
 const FAQ = () => {
 
   return (
-    <section id="faq" className="section-faq p-left p-right !font-snow">
-      <div className="container5 align-top">
+    <section id="faq" className="section-faq p-left p-right !font-snow mx-8">
+      <div className="align-top flex flex-col">
         <h2
-          className="heading text-white text-center md:text-left w-full md:w-auto"
+          className="text-white text-center w-full md:w-auto md:text-6xl text-4xl mb-10"
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="100"

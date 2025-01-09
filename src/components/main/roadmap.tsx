@@ -9,49 +9,88 @@ type ITEM = {
     description: string,
 }
 
+const roadMapTitle: string[] = [
+    "Foundation",
+    "Development and Deployment",
+    "Expansion",
+    "Ecosystem Growth"
+]
+
 const _roadmaps: ITEM[][] = [
     [
         { 
-            title: 'Fair Launch',
+            title: 'Research and development in AI, DeFi, and Gaming. (Completed)',
             description: ''
         }, 
         {
-            title: 'DEX Listing',
+            title: 'Finalize the concept for MeetAstro. (Completed)',
             description: ''
         }, 
         {
-            title: 'Youtube Marketing',
+            title: 'Initiate development of the MeetAstro MVP app. (Completed)',
             description: ''
         },
         {
-            title: 'Social Marketing',
+            title: 'Launch social media presence. (Completed)',
             description: ''
         }
     ],
     [
         {
-            title: 'AIRDROP',
-            description: 'There will be an airdrop of newly created Keyer Stammer tokens to the holders of Astro Coin - The snapshot date will be the 5th July'
+            title: 'Launch the official website.',
+            description: ''
         },
         {
-            title: 'Centralised Exchange Listing',
-            description: 'Astri will be added to centralised exchanges very soon, watch this space for more info!'
+            title: 'Conduct quality assurance and security audits.',
+            description: ''
+        },
+        {
+            title: 'Deploy the MVP app, featuring Swap ATM, yield generator, and missions.',
+            description: ''
+        },
+        {
+            title: 'Kickstart marketing efforts.',
+            description: ''
         },
     ],
     [
         {
-            title: 'MEME Wars',
-            description: 'Following the Airdrops and centralised exchange listings, Astro will launch its own NFT collection, designed by a top Solana MEME house - RAID BOSS MEDIA'
-        }
+            title: 'Introduce additional pre-planned features.',
+            description: ''
+        },
+        {
+            title: 'Launch the MeetAstro Marketplace.',
+            description: ''
+        },
+        {
+            title: 'Partnership announcements',
+            description: ''
+        },
+        {
+            title: 'Execute the Token Generation Event (TGE).',
+            description: ''
+        },
+        {
+            title: 'Secure listings on decentralized exchanges (DEX).',
+            description: ''
+        },
     ],
     [
         {
-            title: 'Regular video updates from the team',
-            description: 'The ASTRO team will be releasing regular video updates to allow the community to know whats being worked on and what will come in the future.'
+            title: 'Achieve listings on centralized exchanges (CEX).',
+            description: ''
         },
         {
-            title: 'ASTRO NFTs',
-            description: 'Following the Airdrops and centralised exchange listings, Astro will launch its own NFT collection, designed by a top Solana MEME house - RAID BOSS MEDIA'
+            title: 'Launch the fully immersive Astro Universe game.',
+            description: ''
+        },
+        {
+            title: 'Open the MeetAstro merchandise store.',
+            description: ''
+        },
+        {
+            title: 'Debut the MeetAstro animation series.',
+            description: ''
         },
     ],
 ]
@@ -62,7 +101,7 @@ const Roadmap = () => {
         <div key={'item' + index} className={`flex ${index % 2 === 0 && 'md:!flex-row-reverse'} flex-row-reverse md:flex-row justify-center gap-2 text-white md:-mt-20`}>
             <div className='w1300:w-[35%] lg:w-[45%] md:w-1/2 w-full  rounded-3xl p-[1px] bg-gradient-to-br from-[#bfb2d4] via-[#241e49] to-[#16122F] my-2 md:my-0'>
                 <div className='w-full h-full p-10 rounded-3xl dark:bg-[#0A0918] bg-[#433b79] gap-y-12'>
-                    <h2 className="md:text-xl lg:text-2xl">Phase {index}</h2>
+                    <h2 className="md:text-xl lg:text-2xl">Phase {index}: {roadMapTitle[index - 1]}</h2>
                     {
                         _items.map((_item: ITEM) => (
                             <div key={index + '_' + _item.title} className="lg:text-lg md:text-sm mt-5">
@@ -100,7 +139,7 @@ const Roadmap = () => {
             data-aos-easing="ease-in-out"
             data-aos-once="true"
             id="roadmap"
-            className="mt-32 mx-2 md:mx-20"
+            className="mt-40 mx-2 md:mx-20"
         >
             <div className="">
                 <div className="title md:pb-20">

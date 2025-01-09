@@ -43,32 +43,51 @@ export default function Home() {
 
   return (
     <main className="dark:bg-[#0d0a1cfa] bg-[#a35ed4d2]">
-      <div className="bg-[url('/back.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
-        <div className="w-full md:w-1/2 h-full z-20">
-          <Canvas>
-            <ambientLight intensity={3} />
-            <pointLight position={[10, 10, 10]} intensity={1} />
-            <directionalLight position={[-5, 5, 5]} intensity={0.5} />
-            <spotLight position={[15, 20, 5]} angle={0.3} intensity={0.8} />
-            <Model />
-            {/* <OrbitControls /> */}
-          </Canvas>
+      <section>
+        <div className="bg-[url('/back.jpg')] bg-no-repeat bg-cover bg-center w-full h-[600px] md:h-screen flex justify-center items-center">
+          {/* <div className="w-full md:w-1/2 h-full z-20">
+            <Canvas>
+              <ambientLight intensity={3} />
+              <pointLight position={[10, 10, 10]} intensity={1} />
+              <directionalLight position={[-5, 5, 5]} intensity={0.5} />
+              <spotLight position={[15, 20, 5]} angle={0.3} intensity={0.8} />
+              <Model />
+            </Canvas>
+          </div> */}
+          <div className="relative hidden w-1/2 md:block text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 mt-[500px] text-center">
+            {/* <h1 className="mb-5 md:text-4xl lg:text-6xl font-zing font-bold">
+              MEET Astro
+            </h1> */}
+            <p className="text-center font-zing">
+              Your own 3D AI companion 🤖 A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
+            </p>
+          </div>
         </div>
-        <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 pr-20">
-          <h1 className="mb-5 md:text-4xl lg:text-6xl font-zing font-bold">
+      </section>
+      <section>
+        <div className="mt-10 md:hidden dark:text-white text-2xl leading-10 lg:text-3xl xl:text-4xl lg:leading-10 px-3">
+          {/* <h1 className="mb-5 text-center text-3xl md:text-4xl lg:text-6xl font-zing font-extrabold">
             MEET Astro
-          </h1>
-          <p className="text-justify font-zing">
-            At Astro, we&apos;re not just another AI agent – we&apos;re the forefront of DeFAi Harnessing the whimsical power of AI, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Astro revolution today – Astro wants to send people to new Era of DeFAi, we want to send Astro to the moon.
+          </h1> */}
+          <p
+            className="text-justify"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
+            Your own 3D AI companion 🤖 A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
           </p>
         </div>
-      </div>
-      <div className="mt-10 md:hidden dark:text-white text-2xl leading-10 lg:text-3xl xl:text-4xl lg:leading-10 px-3">
-        <h1 className="mb-5 text-center text-3xl md:text-4xl lg:text-6xl font-zing font-extrabold">
-          MEET Astro
-        </h1>
-        <p
-          className="text-justify"
+      </section>
+      <Tokenomics />
+      <Roadmap />
+      <section>
+        <div
+          id="joinus"
+          className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="100"
@@ -76,46 +95,31 @@ export default function Home() {
           data-aos-easing="ease-in-out"
           data-aos-once="true"
         >
-          At Astro, we&apos;re not just another AI agent – we&apos;re the forefront of DeFAi Harnessing the whimsical power of AI, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Astro revolution today – Astro wants to send people to new Era of DeFAi, we want to send Astro to the moon.
-        </p>
-      </div>
-      <Tokenomics />
-      <Roadmap />
-
-      <div
-        id="joinus"
-        className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="100"
-        data-aos-duration="700"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
-        <h2 className="text-2xl md:text-5xl text-yellow-300">Join Our Community</h2>
-        <h3 className="!font-sans text-2xl font-bold dark:text-white text-white mt-10">
-          Connect with fellow DeFAi farmers and cultivate collective growth in a harmonious ecosystem.
-        </h3>
-        <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
-          <a href="https://x.com/MeetAstroAI" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-            <span className="hidden md:inline">Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
-          </a>
-          <a href="https://t.me/+oh9HXznG6eg5ZTI1" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-            <span className="hidden md:inline">Telegram</span>
-            <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl" />
-          </a>
-          <a href="https://www.tiktok.com/@meetastroai" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-            <span className="hidden md:inline">Tiktok&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <Icon icon="simple-icons:tiktok" className="text-xl sm:text-4xl" />
-          </a>
+          <h2 className="text-2xl md:text-5xl text-white">Join Our Community</h2>
+          <h3 className="!font-sans text-2xl font-bold dark:text-white text-white mt-10">
+            Connect with fellow DeFAi farmers and cultivate collective growth in a harmonious ecosystem.
+          </h3>
+          <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
+            <a href="https://x.com/MeetAstroAI" target="_blank" className="bg-[#FF951A] p-5 rounded-lg flex gap-2 items-center justify-center">
+              <span className="hidden md:inline">Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
+            </a>
+            <a href="https://t.me/+oh9HXznG6eg5ZTI1" target="_blank" className="bg-[#FF951A] p-5 rounded-lg flex gap-2 items-center justify-center">
+              <span className="hidden md:inline">Telegram</span>
+              <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl" />
+            </a>
+            <a href="https://www.tiktok.com/@meetastroai" target="_blank" className="bg-[#FF951A] p-5 rounded-lg flex gap-2 items-center justify-center">
+              <span className="hidden md:inline">Tiktok&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <Icon icon="simple-icons:tiktok" className="text-xl sm:text-4xl" />
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
 
       <Team/>
 
 
-      <div
+      {/* <div
         id="howtobuy"
         className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
         data-aos="fade-right"
@@ -142,7 +146,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {
         showPlayer &&
@@ -170,9 +174,7 @@ export default function Home() {
       
       {/* <PlayList onPlay={showMovie}/> */}
 
-      <div className="">
-        <FAQ />
-      </div>
+      <FAQ />
     </main>
   );
 }
