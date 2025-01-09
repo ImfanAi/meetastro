@@ -98,16 +98,16 @@ export default function Home() {
           </h3>
           <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
             <a href="https://x.com/MeetAstroAI" target="_blank" className="bg-[#FF951A] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <span className="hidden md:inline">Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
+              <span className="hidden md:inline text-white">Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl text-white" />
             </a>
             <a href="https://t.me/+oh9HXznG6eg5ZTI1" target="_blank" className="bg-[#FF951A] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <span className="hidden md:inline">Telegram</span>
-              <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl" />
+              <span className="hidden md:inline text-white">Telegram</span>
+              <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl text-white" />
             </a>
             <a href="https://www.tiktok.com/@meetastroai" target="_blank" className="bg-[#FF951A] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <span className="hidden md:inline">Tiktok&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              <Icon icon="simple-icons:tiktok" className="text-xl sm:text-4xl" />
+              <span className="hidden md:inline text-white">Tiktok&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <Icon icon="simple-icons:tiktok" className="text-xl sm:text-4xl text-white" />
             </a>
           </div>
         </div>
