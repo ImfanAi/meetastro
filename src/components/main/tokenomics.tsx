@@ -54,12 +54,12 @@ const Tokenomics = () => {
     }, [progress]);
 
     return (
-        <section className="mt-20 mx-2 md:mx-20" id="tokenomics">
+        <section className="w-full" id="tokenomics">
             <div className="">
-                <div className="title">
+                {/* <div className="title">
                     <h2 className="md:text-6xl text-3xl text-center text-white">TOKENOMICS</h2>
-                </div>
-                <div className="donut-chart-bg bg-[#D95617]">
+                </div> */}
+                {/* <div className="donut-chart-bg bg-[#D95617]">
                     <div className="donut-chart-ui items-center">
                         <div>
                             <ul id="legendLeft">
@@ -116,6 +116,17 @@ const Tokenomics = () => {
                             <li key='Network'>Network: SOLANA</li>
                         </ul>
                     </div>
+                </div> */}
+                <div className="flex justify-center items-center">
+                    <video
+                        src="/astro.mp4"
+                        width="600"
+                        height="400"
+                        loop
+                        autoPlay
+                        muted
+                        style={{borderRadius: 0}}
+                    />
                 </div>
             </div>
         </section>

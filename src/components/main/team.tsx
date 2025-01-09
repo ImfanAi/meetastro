@@ -19,26 +19,26 @@ const _members: ITEM[] = [
         avatar: '/avatar/cryptoSI.png',
         name: 'CryptoSI',
         role: 'Project Manager',
-        twitter: 'https://twitter.com/Crypto_SI',
-        telegram: 'https://t.me/Crypto_si',
-        instagram: 'https://www.instagram.com/cryptosi.eth',
-        github: 'https://github.com/Crypto-SI'
+        twitter: '#',
+        telegram: '#',
+        instagram: '#',
+        github: '#'
     },
     { 
         avatar: '/avatar/me.png',
         name: 'Crypto Dew',
         role: 'Developer',
         twitter: '',
-        telegram: 'https://t.me/legendary_crypto_dev',
+        telegram: '#',
         instagram: '',
-        github: 'https://github.com/venuswhispers'
+        github: '#'
     },
     { 
         avatar: '/avatar/echo.png',
         name: 'Echko',
         role: 'Business developer',
-        twitter: 'https://x.com/Echko420',
-        telegram: 'https://t.me/RBMCryptoClash',
+        twitter: '#',
+        telegram: '#',
         instagram: '',
         github: ''
     },
@@ -48,7 +48,7 @@ const _members: ITEM[] = [
         role: 'Social Media',
         twitter: '',
         telegram: '',
-        instagram: 'https://www.instagram.com/financial_navigator',
+        instagram: '#',
         github: ''
     },
 ]

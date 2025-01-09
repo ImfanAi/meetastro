@@ -132,7 +132,17 @@ hgroup,
 menu,
 nav,
 section {
-    display: block
+    display: block;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+html, body, section {
+    block-size: 100%;
+}
+
+html {
+    scroll-snap-type: y mandatory;
 }
 
 ol,
