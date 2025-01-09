@@ -59,7 +59,7 @@ export default function Home() {
               MEET Astro
             </h1> */}
             <p className="text-center font-zing">
-              Your own 3D AI companion 🤖 A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
+              Your own 3D AI companion, A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
             </p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
             data-aos-easing="ease-in-out"
             data-aos-once="true"
           >
-            Your own 3D AI companion 🤖 A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
+            Your own 3D AI companion, A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
           </p>
         </div>
       </section>
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Team/>
+      {/* <Team/> */}
 
 
       {/* <div

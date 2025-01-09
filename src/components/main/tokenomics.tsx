@@ -54,7 +54,7 @@ const Tokenomics = () => {
     }, [progress]);
 
     return (
-        <section className="w-full" id="tokenomics">
+        <section className="w-full px-20 py-25 mt-20" id="tokenomics">
             <div className="">
                 {/* <div className="title">
                     <h2 className="md:text-6xl text-3xl text-center text-white">TOKENOMICS</h2>
@@ -125,7 +125,6 @@ const Tokenomics = () => {
                         loop
                         autoPlay
                         muted
-                        style={{borderRadius: 0}}
                     />
                 </div>
             </div>
