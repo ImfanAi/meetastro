@@ -29,16 +29,16 @@ const Header = () => {
                     className='rounded-full'
                 />
                 <div className='hidden md:flex gap-3 lg:gap-10 justify-center items-center'>
-                    <a href='#roadmap' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>ROADMP</a>
+                    <a href='#roadmap' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>ROADMAP</a>
                     {/* <a href='#tokenomics' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>ASTROMICS</a> */}
                     {/* <a href='#howtobuy' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>HOW TO BUY</a> */}
                     <a href='#joinus' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>JOIN US</a>
-                    <a href='#team' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>MEET OUR TEAM</a>
+                    {/* <a href='#team' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>MEET OUR TEAM</a> */}
                     {/* <a href='#videos' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>VIDEOS</a> */}
                     <a href='#faq' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>FAQ</a>
                 </div>
                 <div className='flex justify-center items-center gap-2 sm:gap-5'>
-                    <a href='https://raydium.io/swap/?inputMint=H218TQViAXsSqwCLnf7L41zewUTRmdN1r4neLtjBXYXS&outputMint=sol' target='_blank' className='rounded-xl bg-blue-600 px-5 py-3 text-white hover:text-black'>ENTER APP</a>
+                    <a href='https://raydium.io/swap/?inputMint=H218TQViAXsSqwCLnf7L41zewUTRmdN1r4neLtjBXYXS&outputMint=sol' target='_blank' className='rounded-xl bg-[#FF951A] px-5 py-3 text-white hover:text-black'>ENTER APP</a>
                     <div className='md:hidden block cursor-pointer hover:opacity-70'>
                         <Icon onClick={() => setShow(!show)} icon="ic:round-list" className='text-white text-4xl' />
                     </div>
