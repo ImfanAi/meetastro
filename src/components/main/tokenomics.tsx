@@ -54,11 +54,11 @@ const Tokenomics = () => {
     }, [progress]);
 
     return (
-        <section className="w-full px-20 py-25 mt-20" id="tokenomics">
-            <div className="">
-                {/* <div className="title">
-                    <h2 className="md:text-6xl text-3xl text-center text-white">TOKENOMICS</h2>
-                </div> */}
+        <section className="mt-20 mx-2 md:mx-20 justify-center items-center" id="tokenomics">
+            <div className="relative flex md:flex-row flex-col items-center">
+                <div className="title md:w-1/3">
+                    <h2 className="md:text-4xl text-2xl text-center text-white">Your own 3D AI companion, A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.</h2>
+                </div>
                 {/* <div className="donut-chart-bg bg-[#D95617]">
                     <div className="donut-chart-ui items-center">
                         <div>
@@ -117,16 +117,18 @@ const Tokenomics = () => {
                         </ul>
                     </div>
                 </div> */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center mt-10 md:w-2/3">
                     <video
                         src="/astro.mp4"
                         width="600"
-                        height="400"
+                        height="300"
                         loop
                         autoPlay
                         muted
+                        className="rounded-lg shadow-lg"
                     />
                 </div>
+
             </div>
         </section>
     );

@@ -54,21 +54,18 @@ export default function Home() {
               <Model />
             </Canvas>
           </div> */}
-          <div className="relative hidden w-1/2 md:block text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 mt-[500px] text-center">
+          {/* <div className="relative hidden w-1/2 md:block text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 mt-[500px] text-center"> */}
             {/* <h1 className="mb-5 md:text-4xl lg:text-6xl font-zing font-bold">
               MEET Astro
             </h1> */}
-            <p className="text-center font-zing">
+            {/* <p className="text-center font-zing">
               Your own 3D AI companion, A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
-            </p>
-          </div>
+            </p> */}
+          {/* </div> */}
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="mt-10 md:hidden dark:text-white text-2xl leading-10 lg:text-3xl xl:text-4xl lg:leading-10 px-3">
-          {/* <h1 className="mb-5 text-center text-3xl md:text-4xl lg:text-6xl font-zing font-extrabold">
-            MEET Astro
-          </h1> */}
           <p
             className="text-justify"
             data-aos="fade-right"
@@ -81,7 +78,7 @@ export default function Home() {
             Your own 3D AI companion, A combination of AI, gaming, entertainment, and decentralized finance (DeFi) all wrapped in one.
           </p>
         </div>
-      </section>
+      </section> */}
       <Tokenomics />
       <Roadmap />
       <section>

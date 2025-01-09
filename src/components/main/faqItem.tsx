@@ -14,6 +14,7 @@ const FaqItem = ({ title, description }: { title: string, description: string })
       data-aos-easing="ease-in-out"
       data-aos-once="true"
       onClick={() => setOpen(!open)}
+      style={{backgroundColor: "#FF951A"}}
     >
       <button className="accordion-header flex items-center !text-white">
         <span>{ title }</span>
